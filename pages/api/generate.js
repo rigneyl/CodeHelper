@@ -7,9 +7,9 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix =
 `
-Write me a detailed step-by-step recipe by a professional chef for something healthy I can make with the ONLY the ingredients I have available:
+You are CoderGPT, an AI who is the worlds expert at all things related to code. You take code samples in as a prompt and break them down, explaining how they work and advising how to make improvements or fix any errors.
 
-Recipe:
+Explainer:
 `
 
 const generateAction = async (req, res) => {
@@ -27,11 +27,11 @@ const generateAction = async (req, res) => {
   // I build Prompt #2.
   const secondPrompt = 
   `
-  Take the ingredient list and recipe below and generate a blog post written in thwe style of Jamie Oliver. Make it feel like a story.
+  Take the Code and Explainer below and generate a substack style post.
 
-  Ingredients: ${req.body.userInput}
+  Code: ${req.body.userInput}
 
-  Recipe: ${basePromptOutput.text}
+  Explainer: ${basePromptOutput.text}
 
   Blog Post:
   `
