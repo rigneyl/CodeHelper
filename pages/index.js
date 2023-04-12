@@ -67,7 +67,7 @@ const callGenerateEndpoint = async () => {
   <div className="output">
     <div className="output-header-container">
       <div className="output-header">
-        <h3>Code</h3>
+        <h3>this is what that code sample does.....</h3>
       </div>
     </div>
     <div className="output-content">
@@ -78,13 +78,13 @@ const callGenerateEndpoint = async () => {
 </div>
     <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://twitter.com/rigneyl"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>built by luke</p>
           </div>
         </a>
       </div></>
