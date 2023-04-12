@@ -36,10 +36,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Code Helper</h1>
+            <h1>ExplainThisCode</h1>
           </div>
           <div className="header-subtitle">
-            <h2>helping to explain what that code actually does</h2>
+            <h2>its like having a coding genie at your service!</h2>
           </div>
         </div>
         {/* Add this code here*/}
