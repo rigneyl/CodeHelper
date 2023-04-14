@@ -29,10 +29,7 @@ const generateAction = async (req, res) => {
   // I build Prompt #2.
   const secondPrompt = 
   `
-  Format the explainer to me in three parts. Part One: The first part explain to 
-  me as if I am 5. Part Two: The second part into an easy to understand answer 
-  format of a minimum 500 words. Reference the code sample when answering. Part Three: 
-  Explain the Code to me line by line.
+  Format the explainer to me in three parts. Part One: The first part explain to me as if I am 5. Part Two: The second part into an easy to understand answer format of a minimum 500 words. Reference the code sample when answering. Part Three: Explain the Code to me line by line.
 
   Code: ${req.body.userInput}
 
@@ -48,7 +45,7 @@ const generateAction = async (req, res) => {
     // I set a higher temperature for this one. Up to you!
     temperature: 0.75,
 		// I also increase max_tokens.
-    max_tokens: 1250,
+    max_tokens: 1800,
   });
   
   // Get the output
