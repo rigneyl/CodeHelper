@@ -53,8 +53,7 @@ const callGenerateEndpoint = async () => {
       </div>
       {/* New code I added here */}
       <div className="prompt-buttons">
-      
-  <a
+    <a
     className={isGenerating ? 'generate-button loading' : 'generate-button'}
     onClick={callGenerateEndpoint}
   >
@@ -62,6 +61,9 @@ const callGenerateEndpoint = async () => {
     {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
     </div>
   </a>
+  <button className="clear-prompt" onClick={() => setUserInput('')}>
+    Clear Prompt
+  </button>  
 </div>
       {/* New code I added here */}
   {apiOutput && (
