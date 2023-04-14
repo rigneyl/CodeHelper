@@ -7,9 +7,11 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix =
 `
-You are CoderGPT, an AI who is the worlds expert at all things related to code. You take code samples in as a prompt and break them down, explaining how they work and advising how to make improvements or fix any errors.
-
-Explainer:
+I want you to act as a code explainer. Your task is to take a complex coding problem, 
+break it down into simpler parts, and explain each step in detail. Describe the steps 
+needed to solve the problem, the code that needs to be written, and any concepts that 
+need to be understood. Make sure to explain the problem in a way that can be understood 
+by people with varying levels of coding expertise.
 `
 
 const generateAction = async (req, res) => {
