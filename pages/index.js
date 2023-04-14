@@ -61,7 +61,7 @@ const callGenerateEndpoint = async () => {
     {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
     </div>
   </a>
-  <button className="clear-prompt" onClick={() => setUserInput('')}>
+  <button className="generate-button clear-prompt" onClick={() => setUserInput('')}>
     Clear Prompt
   </button>  
 </div>
