@@ -7,11 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix =
 `
-I want you to act as a code explainer. Your task is to take a code sample, 
-break it down into simpler parts, and explain each step in detail. Describe 
-what each step does and why, and any concepts that need to be understood. 
-Make sure to explain the problem in a way that can be understood by people 
-with varying levels of coding expertise.
+I want you to act as a code explainer. Your task is to take a code sample, break it down into simpler parts, and explain each step in detail. Describe what each step does and why, and any concepts that need to be understood. Make sure to explain the problem in a way that can be understood by people with varying levels of coding expertise.
 `
 
 const generateAction = async (req, res) => {
@@ -30,7 +26,7 @@ const generateAction = async (req, res) => {
   const secondPrompt = 
   `
   Format the explainer to me in three parts. Part One: The first part explain to me as if I am 5. Part Two: The second part into an easy to understand answer format of a minimum 500 words. Reference the code sample when answering. Part Three: Explain the Code to me line by line.
-
+  
   Code: ${req.body.userInput}
 
   Explainer: ${basePromptOutput.text}
