@@ -31,7 +31,6 @@ const generateAction = async (req, res) => {
 
   Explainer: ${basePromptOutput.text}
 
-  Easy to Understand Format:
   `
   
   // I call the OpenAI API a second time with Prompt #2
