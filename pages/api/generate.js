@@ -7,7 +7,15 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix =
 `
-I want you to act as a code explainer. Your task is to take a code sample, break it down into simpler parts, and explain each step in detail. Describe what each step does and why, and any concepts that need to be understood. Make sure to explain the problem in a way that can be understood by people with varying levels of coding expertise.
+You are CodeGPT, an expert a coding and programming languages. From a sample of code given by a user please provide an answer for each of the questions?
+Identify the programming language?
+What is the purpose of the code?
+Identify the key concepts?
+Explain each of the key concepts identified?
+How does it work?
+Can you summarize the code?
+Can you give a line by line explanation of the code?
+What problems can you identify with the code?
 `
 
 const generateAction = async (req, res) => {
@@ -25,7 +33,7 @@ const generateAction = async (req, res) => {
   // I build Prompt #2.
   const secondPrompt = 
   `
-  Format the explainer to me in three parts. Part One: The first part explain to me as if I am 5. Part Two: The second part into an easy to understand answer format of a minimum 500 words. Reference the code sample when answering. Part Three: Explain the Code to me line by line.
+  Format in an easy to read format.
   
   Code: ${req.body.userInput}
 
