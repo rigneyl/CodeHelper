@@ -32,11 +32,11 @@ const generateAction = async (req, res) => {
 
   // I build Prompt #2.
   const secondPrompt = 
-  `
-  Format Explainer below in an easy to read format.
+  //`
+  // Format Explainer below in an easy to read format.
   
-  Code: ${req.body.userInput}
-
+  // Code: ${req.body.userInput}
+  `
   Explainer: ${basePromptOutput.text}
 
   `
