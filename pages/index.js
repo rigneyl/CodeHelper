@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import Logo from '../assets/logo.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -86,7 +86,7 @@ const callGenerateEndpoint = async () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <Image src={Logo} alt="logo" />
             <p>built by luke</p>
           </div>
         </a>
