@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
   // I build Prompt #2.
   const secondPrompt = 
   `
-  Format the explainer to me in two parts. Part One: The first part explain to me as if I am 5. Part Two: Explain the Code to me line by line.
+  Format the explainer to me in two parts. Part One: The first part explain to me as if I am 5. Part Two: The second part summarize the code.
   
   Code: ${req.body.userInput}
 
