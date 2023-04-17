@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
   // I build Prompt #2.
   const secondPrompt = 
   `
-  Format the explainer to me in three parts. Part One: Identify the programming langauge. Part Two: What is the purpose of this code? Part Three: Give a line by line explanation of the code.
+  Format the explainer to me in three parts. Part One: The first part explain to me as if I am 5. Part Two: The second part into an easy to understand answer format of a minimum 500 words. Reference the code sample when answering. Part Three: Explain the Code to me line by line.
   
   Code: ${req.body.userInput}
 
